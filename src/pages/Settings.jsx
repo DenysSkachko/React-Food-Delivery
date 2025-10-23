@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import PageHeader from '../shared/PageHeader'
+import Product from '../shared/settings/Product'
+import CategoryManager from '../shared/settings/CategoryManager'
 
 const Settings = () => {
   const [activeTab, setActiveTab] = useState(0)
@@ -13,12 +15,12 @@ const Settings = () => {
     {
       label: 'Your Restaurant',
       text: 'Manage name, address, and info',
-      content: <div className="p-6">1</div>,
+      content: <CategoryManager />,
     },
     {
       label: 'Products Management',
       text: 'Manage your products, pricing, etc',
-      content: <div className="p-6">1</div>,
+      content: <Product />,
     },
   ]
 
@@ -44,7 +46,7 @@ const Settings = () => {
           </ul>
         </div>
 
-        <div className="bg-dark flex-1 rounded-lg">{tabs[activeTab].content}</div>
+        <div className="bg-dark flex-1 rounded-lg max-w-[743px]">{tabs[activeTab].content}</div>
       </div>
     </div>
   )

@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-accent: #EA7C69;
-  --color-dark: #1F1D2B;
-  --color-light-alt: #ABBBC2;
+  --color-accent: #ea7c69;
+  --color-dark: #1f1d2b;
+  --color-light-alt: #abbbc2;
   --color-dark-bg: #252836;
-  --color-lighter: #E0E6E9;
+  --color-lighter: #e0e6e9;
   --color-gray: #889898;
-  --color-dark-alt: #2D303E;
+  --color-dark-alt: #2d303e;
+  --color-border: #393c49;
 }
 
 :root {
@@ -26,7 +27,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
+html,
+body {
   box-sizing: border-box;
 }
 
@@ -41,6 +43,7 @@ button {
   cursor: pointer;
 }
 
-input, select {
+input,
+select {
   outline: none;
 }
