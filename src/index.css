@@ -12,6 +12,19 @@
   --color-border: #393c49;
 }
 
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+@utility full-size {
+  @apply w-full h-full;
+}
+
+
 :root {
   font-family: 'Barlow', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -46,4 +59,13 @@ button {
 input,
 select {
   outline: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

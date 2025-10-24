@@ -46,7 +46,7 @@ const Settings = () => {
           </ul>
         </div>
 
-        <div className="bg-dark flex-1 rounded-lg max-w-[743px]">{tabs[activeTab].content}</div>
+        <div className="bg-dark flex-1 rounded-lg max-w-[743px] ">{tabs[activeTab].content}</div>
       </div>
     </div>
   )

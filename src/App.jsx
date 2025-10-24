@@ -1,14 +1,13 @@
-import { Routes, Route } from 'react-router-dom';
-import Card from './ui/Card'
+import { Routes, Route } from 'react-router-dom'
 import { Sidebar } from './shared/Sidebar'
-import Select from './ui/Select'
-import PageHeader from './shared/PageHeader'
 import Home from './pages/Home'
 import Discounts from './pages/Discounts'
 import Dashboard from './pages/Dashboard'
 import Messages from './pages/Messages'
 import Notifications from './pages/Notifications'
 import Settings from './pages/Settings'
+import Logo from './assets/logo.svg?react'
+
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </main>
-       
     </>
   )
 }

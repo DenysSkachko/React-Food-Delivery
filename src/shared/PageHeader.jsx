@@ -1,6 +1,7 @@
 import PageTitle from '../ui/PageTitle'
 import TodayDate from '../ui/TodayDate'
 import Input from '../ui/Input'
+import SearchIcon from '../assets/search.svg?react'
 
 const PageHeader = ({ title, isDate = false, isSearch = false }) => {
   return (
@@ -10,7 +11,7 @@ const PageHeader = ({ title, isDate = false, isSearch = false }) => {
 
         {isDate && <TodayDate />}
       </div>
-      {isSearch && (<Input />)}
+      {isSearch && (<Input placeholder="Search for food, coffe, etc.." icon={<SearchIcon />}/>)}
     </div>
   )
 }
